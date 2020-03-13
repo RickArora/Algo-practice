@@ -1,0 +1,10 @@
+Conae problem solution
+
+m[n] = 0
+min[i] = min(C_ij + m[j]) i <= j <= n
+m[n] = 0 
+for i = n-1 down to 1
+  m[i] = min(C_ij + m[j]) i <= j <= n
+end for
+
+This takes O(m) time

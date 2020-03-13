@@ -1,0 +1,15 @@
+Longest Common subsequence:
+
+Given two subsequences find the length of the longest subsequence present in both of them
+Subsequence = not contiguous (i.e not in order)
+
+Recursive substructure:
+
+c[i,j] = {
+
+0 if i = 0 or j = 0
+if i and j are > 0 c[i-1, j-1] + 1 and x = y
+else max(c[i,j-1],c[i-1,j]) if i,j > 0 and x != y 
+
+
+}
